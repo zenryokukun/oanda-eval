@@ -1,4 +1,4 @@
-# Oanda-Bot（Wavenauts）の取引指標を計算するモジュール
+# Oanda-Bot（Wavenauts）の取引指標を計算するスクリプト
 
 ## いつ使いますか？
 
@@ -21,3 +21,10 @@ python ./main.py
 - DrawDown: ドローダウン
 - ProfitFactor: プロフィット・ファクター
 - RecoveryFactor: リアカバリ・ファクター
+
+## 備考
+
+**sys.exit(JSONString)**でexitするため、status codeは0（正常）以外になります。stderrのほうに
+出力される場合もあるので、実行環境や呼び出し元の機能を確認してください。
+
+将来的に**print(JSONString)**として、呼び出し元でstdoutを拾うやり方に変える可能性があります。
